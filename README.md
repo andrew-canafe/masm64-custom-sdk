@@ -1,5 +1,5 @@
 # MASM64-Custom-SDK
-A custom SDK (2016) that I put together for my personal assembly language projects. Includes the MASM64 assembler (Windows only).
+Custom MASM64 SDK (2016) that I put together for my personal assembly language projects. Includes the MASM64 assembler.
 
 ## How to use:
 1. Extract masm64sdk.zip file to C:\ or root directory
