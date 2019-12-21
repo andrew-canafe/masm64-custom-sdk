@@ -1,0 +1,126 @@
+IFNDEF RTM_INC
+RTM_INC equ <1>
+
+PROTO64 external,BestMatchInTable, :QWORD,:QWORD,:QWORD
+PROTO64 external,CheckTable, :QWORD
+PROTO64 external,CreateTable, :QWORD,:QWORD
+PROTO64 external,DeleteFromTable, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,DestroyTable, :QWORD
+PROTO64 external,DumpTable, :QWORD,:QWORD
+PROTO64 external,EnumOverTable, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,InsertIntoTable, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,MgmAddGroupMembershipEntry, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,MgmDeInitialize, 
+PROTO64 external,MgmDeRegisterMProtocol, :QWORD
+PROTO64 external,MgmDeleteGroupMembershipEntry, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,MgmGetFirstMfe, :QWORD,:QWORD,:QWORD
+PROTO64 external,MgmGetFirstMfeStats, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,MgmGetMfe, :QWORD,:QWORD,:QWORD
+PROTO64 external,MgmGetMfeStats, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,MgmGetNextMfe, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,MgmGetNextMfeStats, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,MgmGetProtocolOnInterface, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,MgmGroupEnumerationEnd, :QWORD
+PROTO64 external,MgmGroupEnumerationGetNext, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,MgmGroupEnumerationStart, :QWORD,:QWORD,:QWORD
+PROTO64 external,MgmInitialize, :QWORD,:QWORD
+PROTO64 external,MgmRegisterMProtocol, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,MgmReleaseInterfaceOwnership, :QWORD,:QWORD,:QWORD
+PROTO64 external,MgmTakeInterfaceOwnership, :QWORD,:QWORD,:QWORD
+PROTO64 external,NextMatchInTable, :QWORD,:QWORD,:QWORD
+PROTO64 external,RtmAddNextHop, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmAddRoute, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmAddRouteToDest, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmBlockConvertRoutesToStatic, :QWORD,:QWORD,:QWORD
+PROTO64 external,RtmBlockDeleteRoutes, :QWORD,:QWORD,:QWORD
+PROTO64 external,RtmBlockMethods, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmBlockSetRouteEnable, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmCleanupInstances, 
+PROTO64 external,RtmCloseEnumerationHandle, :QWORD
+PROTO64 external,RtmConvertIpv6AddressAndLengthToNetAddress, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmConvertNetAddressToIpv6AddressAndLength, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmCreateBestRouteEnum, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmCreateDestEnum, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmCreateEnumerationHandle, :QWORD,:QWORD,:QWORD
+PROTO64 external,RtmCreateNextHopEnum, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmCreateRouteEnum, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmCreateRouteList, :QWORD,:QWORD
+PROTO64 external,RtmCreateRouteListEnum, :QWORD,:QWORD,:QWORD
+PROTO64 external,RtmDeleteEnumHandle, :QWORD,:QWORD
+PROTO64 external,RtmDeleteNextHop, :QWORD,:QWORD,:QWORD
+PROTO64 external,RtmDeleteRoute, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmDeleteRouteList, :QWORD,:QWORD
+PROTO64 external,RtmDeleteRouteTable, :QWORD
+PROTO64 external,RtmDeleteRouteToDest, :QWORD,:QWORD,:QWORD
+PROTO64 external,RtmDequeueRouteChangeMessage, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmDereferenceHandles, :QWORD,:QWORD,:QWORD
+PROTO64 external,RtmDeregisterClient, :QWORD
+PROTO64 external,RtmDeregisterEntity, :QWORD
+PROTO64 external,RtmDeregisterFromChangeNotification, :QWORD,:QWORD
+PROTO64 external,RtmEnumerateGetNextRoute, :QWORD,:QWORD
+PROTO64 external,RtmFindNextHop, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmGetAddressFamilyInfo, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmGetChangeStatus, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmGetChangedDests, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmGetDestInfo, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmGetEntityInfo, :QWORD,:QWORD,:QWORD
+PROTO64 external,RtmGetEntityMethods, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmGetEnumBestRoutes, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmGetEnumDests, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmGetEnumNextHops, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmGetEnumRoutes, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmGetExactMatchDestination, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmGetExactMatchRoute, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmGetFirstRoute, :QWORD,:QWORD,:QWORD
+PROTO64 external,RtmGetInstanceInfo, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmGetInstances, :QWORD,:QWORD
+PROTO64 external,RtmGetLessSpecificDestination, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmGetListEnumRoutes, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmGetMostSpecificDestination, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmGetNetworkCount, :QWORD
+PROTO64 external,RtmGetNextHopInfo, :QWORD,:QWORD,:QWORD
+PROTO64 external,RtmGetNextHopPointer, :QWORD,:QWORD,:QWORD
+PROTO64 external,RtmGetNextRoute, :QWORD,:QWORD,:QWORD
+PROTO64 external,RtmGetOpaqueInformationPointer, :QWORD,:QWORD,:QWORD
+PROTO64 external,RtmGetRegisteredEntities, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmGetRouteAge, :QWORD
+PROTO64 external,RtmGetRouteInfo, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmGetRoutePointer, :QWORD,:QWORD,:QWORD
+PROTO64 external,RtmHoldDestination, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmIgnoreChangedDests, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmInsertInRouteList, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmInvokeMethod, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmIsBestRoute, :QWORD,:QWORD,:QWORD
+PROTO64 external,RtmIsMarkedForChangeNotification, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmIsRoute, :QWORD,:QWORD,:QWORD
+PROTO64 external,RtmLockDestination, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmLockNextHop, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmLockRoute, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmLookupIPDestination, :QWORD,:QWORD
+PROTO64 external,RtmMarkDestForChangeNotification, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmReadAddressFamilyConfig, :QWORD,:QWORD,:QWORD
+PROTO64 external,RtmReadInstanceConfig, :QWORD,:QWORD
+PROTO64 external,RtmReferenceHandles, :QWORD,:QWORD,:QWORD
+PROTO64 external,RtmRegisterClient, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmRegisterEntity, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmRegisterForChangeNotification, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmReleaseChangedDests, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmReleaseDestInfo, :QWORD,:QWORD
+PROTO64 external,RtmReleaseDests, :QWORD,:QWORD,:QWORD
+PROTO64 external,RtmReleaseEntities, :QWORD,:QWORD,:QWORD
+PROTO64 external,RtmReleaseEntityInfo, :QWORD,:QWORD
+PROTO64 external,RtmReleaseNextHopInfo, :QWORD,:QWORD
+PROTO64 external,RtmReleaseNextHops, :QWORD,:QWORD,:QWORD
+PROTO64 external,RtmReleaseRouteInfo, :QWORD,:QWORD
+PROTO64 external,RtmReleaseRoutes, :QWORD,:QWORD,:QWORD
+PROTO64 external,RtmUpdateAndUnlockRoute, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RtmWriteAddressFamilyConfig, :QWORD,:QWORD,:QWORD
+PROTO64 external,RtmWriteInstanceConfig, :QWORD,:QWORD
+PROTO64 external,SearchInTable, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+
+ELSE
+echo -----------------------------------------
+echo WARNING Duplicate include file rtm.inc
+echo -----------------------------------------
+ENDIF
+

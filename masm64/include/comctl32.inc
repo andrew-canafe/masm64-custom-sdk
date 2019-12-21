@@ -1,0 +1,133 @@
+IFNDEF COMCTL32_INC
+COMCTL32_INC equ <1>
+
+PROTO64 external,AddMRUStringW, :QWORD,:QWORD
+PROTO64 external,CreateMRUListW, :QWORD
+PROTO64 external,CreateMappedBitmap, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,CreatePropertySheetPageA, :QWORD
+PROTO64 external,CreatePropertySheetPageW, :QWORD
+PROTO64 external,CreateStatusWindowA, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,CreateStatusWindowW, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,CreateToolbar, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,CreateToolbarEx, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,CreateUpDownControl, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,DPA_Clone, :QWORD,:QWORD
+PROTO64 external,DPA_Create, :QWORD
+PROTO64 external,DPA_CreateEx, :QWORD,:QWORD
+PROTO64 external,DPA_DeleteAllPtrs, :QWORD
+PROTO64 external,DPA_DeletePtr, :QWORD,:QWORD
+PROTO64 external,DPA_Destroy, :QWORD
+PROTO64 external,DPA_DestroyCallback, :QWORD,:QWORD,:QWORD
+PROTO64 external,DPA_EnumCallback, :QWORD,:QWORD,:QWORD
+PROTO64 external,DPA_GetPtr, :QWORD,:QWORD
+PROTO64 external,DPA_GetPtrIndex, :QWORD,:QWORD
+PROTO64 external,DPA_GetSize, :QWORD
+PROTO64 external,DPA_Grow, :QWORD,:QWORD
+PROTO64 external,DPA_InsertPtr, :QWORD,:QWORD,:QWORD
+PROTO64 external,DPA_LoadStream, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,DPA_Merge, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,DPA_SaveStream, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,DPA_Search, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,DPA_SetPtr, :QWORD,:QWORD,:QWORD
+PROTO64 external,DPA_Sort, :QWORD,:QWORD,:QWORD
+PROTO64 external,DSA_Clone, :QWORD
+PROTO64 external,DSA_Create, :QWORD,:QWORD
+PROTO64 external,DSA_DeleteAllItems, :QWORD
+PROTO64 external,DSA_DeleteItem, :QWORD,:QWORD
+PROTO64 external,DSA_Destroy, :QWORD
+PROTO64 external,DSA_DestroyCallback, :QWORD,:QWORD,:QWORD
+PROTO64 external,DSA_EnumCallback, :QWORD,:QWORD,:QWORD
+PROTO64 external,DSA_GetItem, :QWORD,:QWORD,:QWORD
+PROTO64 external,DSA_GetItemPtr, :QWORD,:QWORD
+PROTO64 external,DSA_GetSize, :QWORD
+PROTO64 external,DSA_InsertItem, :QWORD,:QWORD,:QWORD
+PROTO64 external,DSA_SetItem, :QWORD,:QWORD,:QWORD
+PROTO64 external,DSA_Sort, :QWORD,:QWORD,:QWORD
+PROTO64 external,DefSubclassProc, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,DestroyPropertySheetPage, :QWORD
+PROTO64 external,DrawInsert, :QWORD,:QWORD,:QWORD
+PROTO64 external,DrawShadowText, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,DrawStatusTextA, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,DrawStatusTextW, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,EnumMRUListW, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,FlatSB_EnableScrollBar, :QWORD,:QWORD,:QWORD
+PROTO64 external,FlatSB_GetScrollInfo, :QWORD,:QWORD,:QWORD
+PROTO64 external,FlatSB_GetScrollPos, :QWORD,:QWORD
+PROTO64 external,FlatSB_GetScrollProp, :QWORD,:QWORD,:QWORD
+PROTO64 external,FlatSB_GetScrollRange, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,FlatSB_SetScrollInfo, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,FlatSB_SetScrollPos, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,FlatSB_SetScrollProp, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,FlatSB_SetScrollRange, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,FlatSB_ShowScrollBar, :QWORD,:QWORD,:QWORD
+PROTO64 external,FreeMRUList, :QWORD
+PROTO64 external,GetEffectiveClientRect, :QWORD,:QWORD,:QWORD
+PROTO64 external,GetMUILanguage, 
+PROTO64 external,GetWindowSubclass, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,HIMAGELIST_QueryInterface, :QWORD,:QWORD,:QWORD
+PROTO64 external,ImageList_Add, :QWORD,:QWORD,:QWORD
+PROTO64 external,ImageList_AddIcon, :QWORD,:QWORD
+PROTO64 external,ImageList_AddMasked, :QWORD,:QWORD,:QWORD
+PROTO64 external,ImageList_BeginDrag, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,ImageList_CoCreateInstance, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,ImageList_Copy, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,ImageList_Create, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,ImageList_Destroy, :QWORD
+PROTO64 external,ImageList_DragEnter, :QWORD,:QWORD,:QWORD
+PROTO64 external,ImageList_DragLeave, :QWORD
+PROTO64 external,ImageList_DragMove, :QWORD,:QWORD
+PROTO64 external,ImageList_DragShowNolock, :QWORD
+PROTO64 external,ImageList_Draw, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,ImageList_DrawEx, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,ImageList_DrawIndirect, :QWORD
+PROTO64 external,ImageList_Duplicate, :QWORD
+PROTO64 external,ImageList_EndDrag, 
+PROTO64 external,ImageList_GetBkColor, :QWORD
+PROTO64 external,ImageList_GetDragImage, :QWORD,:QWORD
+PROTO64 external,ImageList_GetIcon, :QWORD,:QWORD,:QWORD
+PROTO64 external,ImageList_GetIconSize, :QWORD,:QWORD,:QWORD
+PROTO64 external,ImageList_GetImageCount, :QWORD
+PROTO64 external,ImageList_GetImageInfo, :QWORD,:QWORD,:QWORD
+PROTO64 external,ImageList_GetImageRect, :QWORD,:QWORD,:QWORD
+PROTO64 external,ImageList_LoadImageA, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,ImageList_LoadImageW, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,ImageList_Merge, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,ImageList_Read, :QWORD
+PROTO64 external,ImageList_ReadEx, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,ImageList_Remove, :QWORD,:QWORD
+PROTO64 external,ImageList_Replace, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,ImageList_ReplaceIcon, :QWORD,:QWORD,:QWORD
+PROTO64 external,ImageList_SetBkColor, :QWORD,:QWORD
+PROTO64 external,ImageList_SetDragCursorImage, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,ImageList_SetFilter, :QWORD,:QWORD,:QWORD
+PROTO64 external,ImageList_SetIconSize, :QWORD,:QWORD,:QWORD
+PROTO64 external,ImageList_SetImageCount, :QWORD,:QWORD
+PROTO64 external,ImageList_SetOverlayImage, :QWORD,:QWORD,:QWORD
+PROTO64 external,ImageList_Write, :QWORD,:QWORD
+PROTO64 external,ImageList_WriteEx, :QWORD,:QWORD,:QWORD
+PROTO64 external,InitCommonControls, 
+PROTO64 external,InitCommonControlsEx, :QWORD
+PROTO64 external,InitMUILanguage, :QWORD
+PROTO64 external,InitializeFlatSB, :QWORD
+PROTO64 external,LBItemFromPt, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,LoadIconMetric, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,LoadIconWithScaleDown, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,MakeDragList, :QWORD
+PROTO64 external,MenuHelp, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,PropertySheetA, :QWORD
+PROTO64 external,PropertySheetW, :QWORD
+PROTO64 external,RemoveWindowSubclass, :QWORD,:QWORD,:QWORD
+PROTO64 external,SetWindowSubclass, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,ShowHideMenuCtl, :QWORD,:QWORD,:QWORD
+PROTO64 external,Str_SetPtrW, :QWORD,:QWORD
+PROTO64 external,TaskDialog, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,TaskDialogIndirect, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,UninitializeFlatSB, :QWORD
+PROTO64 external,_TrackMouseEvent, :QWORD
+
+ELSE
+echo -----------------------------------------
+echo WARNING Duplicate include file comctl32.inc
+echo -----------------------------------------
+ENDIF
+

@@ -1,0 +1,199 @@
+IFNDEF WINMM_INC
+WINMM_INC equ <1>
+
+PROTO64 external,CloseDriver, :QWORD,:QWORD,:QWORD
+PROTO64 external,DefDriverProc, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,DriverCallback, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,DrvGetModuleHandle, :QWORD
+PROTO64 external,GetDriverModuleHandle, :QWORD
+PROTO64 external,NotifyCallbackData, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,OpenDriver, :QWORD,:QWORD,:QWORD
+PROTO64 external,PlaySoundA, :QWORD,:QWORD,:QWORD
+PROTO64 external,PlaySoundW, :QWORD,:QWORD,:QWORD
+PROTO64 external,SendDriverMessage, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,WOW32DriverCallback, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,WOW32ResolveMultiMediaHandle, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,WOWAppExit, :QWORD
+PROTO64 external,aux32Message, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,auxGetDevCapsA, :QWORD,:QWORD,:QWORD
+PROTO64 external,auxGetDevCapsW, :QWORD,:QWORD,:QWORD
+PROTO64 external,auxGetNumDevs, 
+PROTO64 external,auxGetVolume, :QWORD,:QWORD
+PROTO64 external,auxOutMessage, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,auxSetVolume, :QWORD,:QWORD
+PROTO64 external,joy32Message, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,joyConfigChanged, :QWORD
+PROTO64 external,joyGetDevCapsA, :QWORD,:QWORD,:QWORD
+PROTO64 external,joyGetDevCapsW, :QWORD,:QWORD,:QWORD
+PROTO64 external,joyGetNumDevs, 
+PROTO64 external,joyGetPos, :QWORD,:QWORD
+PROTO64 external,joyGetPosEx, :QWORD,:QWORD
+PROTO64 external,joyGetThreshold, :QWORD,:QWORD
+PROTO64 external,joyReleaseCapture, :QWORD
+PROTO64 external,joySetCapture, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,joySetThreshold, :QWORD,:QWORD
+PROTO64 external,mci32Message, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,mciDriverNotify, :QWORD,:QWORD,:QWORD
+PROTO64 external,mciDriverYield, :QWORD
+PROTO64 external,mciFreeCommandResource, :QWORD
+PROTO64 external,mciGetCreatorTask, :QWORD
+PROTO64 external,mciGetDeviceIDA, :QWORD
+PROTO64 external,mciGetDeviceIDFromElementIDA, :QWORD,:QWORD
+PROTO64 external,mciGetDeviceIDFromElementIDW, :QWORD,:QWORD
+PROTO64 external,mciGetDeviceIDW, :QWORD
+PROTO64 external,mciGetDriverData, :QWORD
+PROTO64 external,mciGetErrorStringA, :QWORD,:QWORD,:QWORD
+PROTO64 external,mciGetErrorStringW, :QWORD,:QWORD,:QWORD
+PROTO64 external,mciGetYieldProc, :QWORD,:QWORD
+PROTO64 external,mciLoadCommandResource, :QWORD,:QWORD,:QWORD
+PROTO64 external,mciSendCommandA, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,mciSendCommandW, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,mciSendStringA, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,mciSendStringW, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,mciSetDriverData, :QWORD,:QWORD
+PROTO64 external,mciSetYieldProc, :QWORD,:QWORD,:QWORD
+PROTO64 external,mid32Message, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,midiConnect, :QWORD,:QWORD,:QWORD
+PROTO64 external,midiDisconnect, :QWORD,:QWORD,:QWORD
+PROTO64 external,midiInAddBuffer, :QWORD,:QWORD,:QWORD
+PROTO64 external,midiInClose, :QWORD
+PROTO64 external,midiInGetDevCapsA, :QWORD,:QWORD,:QWORD
+PROTO64 external,midiInGetDevCapsW, :QWORD,:QWORD,:QWORD
+PROTO64 external,midiInGetErrorTextA, :QWORD,:QWORD,:QWORD
+PROTO64 external,midiInGetErrorTextW, :QWORD,:QWORD,:QWORD
+PROTO64 external,midiInGetID, :QWORD,:QWORD
+PROTO64 external,midiInGetNumDevs, 
+PROTO64 external,midiInMessage, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,midiInOpen, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,midiInPrepareHeader, :QWORD,:QWORD,:QWORD
+PROTO64 external,midiInReset, :QWORD
+PROTO64 external,midiInStart, :QWORD
+PROTO64 external,midiInStop, :QWORD
+PROTO64 external,midiInUnprepareHeader, :QWORD,:QWORD,:QWORD
+PROTO64 external,midiOutCacheDrumPatches, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,midiOutCachePatches, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,midiOutClose, :QWORD
+PROTO64 external,midiOutGetDevCapsA, :QWORD,:QWORD,:QWORD
+PROTO64 external,midiOutGetDevCapsW, :QWORD,:QWORD,:QWORD
+PROTO64 external,midiOutGetErrorTextA, :QWORD,:QWORD,:QWORD
+PROTO64 external,midiOutGetErrorTextW, :QWORD,:QWORD,:QWORD
+PROTO64 external,midiOutGetID, :QWORD,:QWORD
+PROTO64 external,midiOutGetNumDevs, 
+PROTO64 external,midiOutGetVolume, :QWORD,:QWORD
+PROTO64 external,midiOutLongMsg, :QWORD,:QWORD,:QWORD
+PROTO64 external,midiOutMessage, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,midiOutOpen, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,midiOutPrepareHeader, :QWORD,:QWORD,:QWORD
+PROTO64 external,midiOutReset, :QWORD
+PROTO64 external,midiOutSetVolume, :QWORD,:QWORD
+PROTO64 external,midiOutShortMsg, :QWORD,:QWORD
+PROTO64 external,midiOutUnprepareHeader, :QWORD,:QWORD,:QWORD
+PROTO64 external,midiStreamClose, :QWORD
+PROTO64 external,midiStreamOpen, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,midiStreamOut, :QWORD,:QWORD,:QWORD
+PROTO64 external,midiStreamPause, :QWORD
+PROTO64 external,midiStreamPosition, :QWORD,:QWORD,:QWORD
+PROTO64 external,midiStreamProperty, :QWORD,:QWORD,:QWORD
+PROTO64 external,midiStreamRestart, :QWORD
+PROTO64 external,midiStreamStop, :QWORD
+PROTO64 external,mixerClose, :QWORD
+PROTO64 external,mixerGetControlDetailsA, :QWORD,:QWORD,:QWORD
+PROTO64 external,mixerGetControlDetailsW, :QWORD,:QWORD,:QWORD
+PROTO64 external,mixerGetDevCapsA, :QWORD,:QWORD,:QWORD
+PROTO64 external,mixerGetDevCapsW, :QWORD,:QWORD,:QWORD
+PROTO64 external,mixerGetID, :QWORD,:QWORD,:QWORD
+PROTO64 external,mixerGetLineControlsA, :QWORD,:QWORD,:QWORD
+PROTO64 external,mixerGetLineControlsW, :QWORD,:QWORD,:QWORD
+PROTO64 external,mixerGetLineInfoA, :QWORD,:QWORD,:QWORD
+PROTO64 external,mixerGetLineInfoW, :QWORD,:QWORD,:QWORD
+PROTO64 external,mixerGetNumDevs, 
+PROTO64 external,mixerMessage, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,mixerOpen, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,mixerSetControlDetails, :QWORD,:QWORD,:QWORD
+PROTO64 external,mmDrvInstall, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,mmGetCurrentTask, 
+PROTO64 external,mmTaskBlock, :QWORD
+PROTO64 external,mmTaskCreate, :QWORD,:QWORD,:QWORD
+PROTO64 external,mmTaskSignal, :QWORD
+PROTO64 external,mmTaskYield, 
+PROTO64 external,mmioAdvance, :QWORD,:QWORD,:QWORD
+PROTO64 external,mmioAscend, :QWORD,:QWORD,:QWORD
+PROTO64 external,mmioClose, :QWORD,:QWORD
+PROTO64 external,mmioCreateChunk, :QWORD,:QWORD,:QWORD
+PROTO64 external,mmioDescend, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,mmioFlush, :QWORD,:QWORD
+PROTO64 external,mmioGetInfo, :QWORD,:QWORD,:QWORD
+PROTO64 external,mmioInstallIOProcA, :QWORD,:QWORD,:QWORD
+PROTO64 external,mmioInstallIOProcW, :QWORD,:QWORD,:QWORD
+PROTO64 external,mmioOpenA, :QWORD,:QWORD,:QWORD
+PROTO64 external,mmioOpenW, :QWORD,:QWORD,:QWORD
+PROTO64 external,mmioRead, :QWORD,:QWORD,:QWORD
+PROTO64 external,mmioRenameA, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,mmioRenameW, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,mmioSeek, :QWORD,:QWORD,:QWORD
+PROTO64 external,mmioSendMessage, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,mmioSetBuffer, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,mmioSetInfo, :QWORD,:QWORD,:QWORD
+PROTO64 external,mmioStringToFOURCCA, :QWORD,:QWORD
+PROTO64 external,mmioStringToFOURCCW, :QWORD,:QWORD
+PROTO64 external,mmioWrite, :QWORD,:QWORD,:QWORD
+PROTO64 external,mod32Message, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,mxd32Message, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,sndPlaySoundA, :QWORD,:QWORD
+PROTO64 external,sndPlaySoundW, :QWORD,:QWORD
+PROTO64 external,tid32Message, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,timeBeginPeriod, :QWORD
+PROTO64 external,timeEndPeriod, :QWORD
+PROTO64 external,timeGetDevCaps, :QWORD,:QWORD
+PROTO64 external,timeGetSystemTime, :QWORD,:QWORD
+PROTO64 external,timeGetTime, 
+PROTO64 external,timeKillEvent, :QWORD
+PROTO64 external,timeSetEvent, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,waveInAddBuffer, :QWORD,:QWORD,:QWORD
+PROTO64 external,waveInClose, :QWORD
+PROTO64 external,waveInGetDevCapsA, :QWORD,:QWORD,:QWORD
+PROTO64 external,waveInGetDevCapsW, :QWORD,:QWORD,:QWORD
+PROTO64 external,waveInGetErrorTextA, :QWORD,:QWORD,:QWORD
+PROTO64 external,waveInGetErrorTextW, :QWORD,:QWORD,:QWORD
+PROTO64 external,waveInGetID, :QWORD,:QWORD
+PROTO64 external,waveInGetNumDevs, 
+PROTO64 external,waveInGetPosition, :QWORD,:QWORD,:QWORD
+PROTO64 external,waveInMessage, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,waveInOpen, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,waveInPrepareHeader, :QWORD,:QWORD,:QWORD
+PROTO64 external,waveInReset, :QWORD
+PROTO64 external,waveInStart, :QWORD
+PROTO64 external,waveInStop, :QWORD
+PROTO64 external,waveInUnprepareHeader, :QWORD,:QWORD,:QWORD
+PROTO64 external,waveOutBreakLoop, :QWORD
+PROTO64 external,waveOutClose, :QWORD
+PROTO64 external,waveOutGetDevCapsA, :QWORD,:QWORD,:QWORD
+PROTO64 external,waveOutGetDevCapsW, :QWORD,:QWORD,:QWORD
+PROTO64 external,waveOutGetErrorTextA, :QWORD,:QWORD,:QWORD
+PROTO64 external,waveOutGetErrorTextW, :QWORD,:QWORD,:QWORD
+PROTO64 external,waveOutGetID, :QWORD,:QWORD
+PROTO64 external,waveOutGetNumDevs, 
+PROTO64 external,waveOutGetPitch, :QWORD,:QWORD
+PROTO64 external,waveOutGetPlaybackRate, :QWORD,:QWORD
+PROTO64 external,waveOutGetPosition, :QWORD,:QWORD,:QWORD
+PROTO64 external,waveOutGetVolume, :QWORD,:QWORD
+PROTO64 external,waveOutMessage, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,waveOutOpen, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,waveOutPause, :QWORD
+PROTO64 external,waveOutPrepareHeader, :QWORD,:QWORD,:QWORD
+PROTO64 external,waveOutReset, :QWORD
+PROTO64 external,waveOutRestart, :QWORD
+PROTO64 external,waveOutSetPitch, :QWORD,:QWORD
+PROTO64 external,waveOutSetPlaybackRate, :QWORD,:QWORD
+PROTO64 external,waveOutSetVolume, :QWORD,:QWORD
+PROTO64 external,waveOutUnprepareHeader, :QWORD,:QWORD,:QWORD
+PROTO64 external,waveOutWrite, :QWORD,:QWORD,:QWORD
+PROTO64 external,wid32Message, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,wod32Message, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+
+ELSE
+echo -----------------------------------------
+echo WARNING Duplicate include file winmm.inc
+echo -----------------------------------------
+ENDIF
+

@@ -1,0 +1,140 @@
+IFNDEF MAPI32_INC
+MAPI32_INC equ <1>
+
+PROTO64 external,BuildDisplayTable, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,CbOfEncoded, :QWORD
+PROTO64 external,CchOfEncoding, :QWORD
+PROTO64 external,ChangeIdleRoutine, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,CloseIMsgSession, :QWORD
+PROTO64 external,CreateIProp, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,CreateTable, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,DeinitMapiUtil, 
+PROTO64 external,DeregisterIdleRoutine, :QWORD
+PROTO64 external,EnableIdleRoutine, :QWORD,:QWORD
+PROTO64 external,EncodeID, :QWORD,:QWORD,:QWORD
+PROTO64 external,FBadColumnSet, :QWORD
+PROTO64 external,FBadEntryList, :QWORD
+PROTO64 external,FBadProp, :QWORD
+PROTO64 external,FBadPropTag, :QWORD
+PROTO64 external,FBadRestriction, :QWORD
+PROTO64 external,FBadRglpNameID, :QWORD,:QWORD
+PROTO64 external,FBadRglpszA, :QWORD,:QWORD
+PROTO64 external,FBadRglpszW, :QWORD,:QWORD
+PROTO64 external,FBadRow, :QWORD
+PROTO64 external,FBadRowSet, :QWORD
+PROTO64 external,FBadSortOrderSet, :QWORD
+PROTO64 external,FBinFromHex, :QWORD,:QWORD
+PROTO64 external,FDecodeID, :QWORD,:QWORD,:QWORD
+PROTO64 external,FEqualNames, :QWORD,:QWORD
+PROTO64 external,FPropCompareProp, :QWORD,:QWORD,:QWORD
+PROTO64 external,FPropContainsProp, :QWORD,:QWORD,:QWORD
+PROTO64 external,FPropExists, :QWORD,:QWORD
+PROTO64 external,FreePadrlist, :QWORD
+PROTO64 external,FreeProws, :QWORD
+PROTO64 external,FtAdcFt, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,FtAddFt, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,FtDivFtBogus, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,FtMulDw, :QWORD,:QWORD,:QWORD
+PROTO64 external,FtMulDwDw, :QWORD,:QWORD
+PROTO64 external,FtNegFt, :QWORD,:QWORD
+PROTO64 external,FtSubFt, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,FtgRegisterIdleRoutine, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,GetAttribIMsgOnIStg, :QWORD,:QWORD,:QWORD
+PROTO64 external,GetTnefStreamCodepage, :QWORD,:QWORD,:QWORD
+PROTO64 external,HexFromBin, :QWORD,:QWORD,:QWORD
+PROTO64 external,HrAddColumns, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,HrAddColumnsEx, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,HrAllocAdviseSink, :QWORD,:QWORD,:QWORD
+PROTO64 external,HrComposeEID, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,HrComposeMsgID, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,HrDecomposeEID, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,HrDecomposeMsgID, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,HrDispatchNotifications, :QWORD
+PROTO64 external,HrEntryIDFromSz, :QWORD,:QWORD,:QWORD
+PROTO64 external,HrGetOmiProvidersFlags, :QWORD,:QWORD
+PROTO64 external,HrGetOneProp, :QWORD,:QWORD,:QWORD
+PROTO64 external,HrIStorageFromStream, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,HrQueryAllRows, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,HrSetOmiProvidersFlagsInvalid, :QWORD
+PROTO64 external,HrSetOneProp, :QWORD,:QWORD
+PROTO64 external,HrSzFromEntryID, :QWORD,:QWORD,:QWORD
+PROTO64 external,HrThisThreadAdviseSink, :QWORD,:QWORD
+PROTO64 external,HrValidateIPMSubtree, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,HrValidateParameters, :QWORD,:QWORD
+PROTO64 external,InstallFilterHook, :QWORD
+PROTO64 external,IsBadBoundedStringPtr, :QWORD,:QWORD
+PROTO64 external,LPropCompareProp, :QWORD,:QWORD
+PROTO64 external,LaunchWizard, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,LpValFindProp, :QWORD,:QWORD,:QWORD
+PROTO64 external,MAPIAdminProfiles, :QWORD,:QWORD
+PROTO64 external,MAPIAllocateBuffer, :QWORD,:QWORD
+PROTO64 external,MAPIAllocateMore, :QWORD,:QWORD,:QWORD
+PROTO64 external,MAPIDeinitIdle, 
+PROTO64 external,MAPIFreeBuffer, :QWORD
+PROTO64 external,MAPIGetDefaultMalloc, 
+PROTO64 external,MAPIInitIdle, :QWORD
+PROTO64 external,MAPIInitialize, :QWORD
+PROTO64 external,MAPILogonEx, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,MAPIOpenFormMgr, :QWORD,:QWORD
+PROTO64 external,MAPIOpenLocalFormContainer, :QWORD
+PROTO64 external,MAPIUninitialize, 
+PROTO64 external,MNLS_CompareStringW, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,MNLS_IsBadStringPtrW, :QWORD,:QWORD
+PROTO64 external,MNLS_MultiByteToWideChar, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,MNLS_WideCharToMultiByte, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,MNLS_lstrcmpW, :QWORD,:QWORD
+PROTO64 external,MNLS_lstrcpyW, :QWORD,:QWORD
+PROTO64 external,MNLS_lstrlenW, :QWORD
+PROTO64 external,MapStorageSCode, :QWORD
+PROTO64 external,OpenIMsgOnIStg, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,OpenIMsgSession, :QWORD,:QWORD,:QWORD
+PROTO64 external,OpenStreamOnFile, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,OpenTnefStream, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,OpenTnefStreamEx, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,PpropFindProp, :QWORD,:QWORD,:QWORD
+PROTO64 external,PropCopyMore, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,RTFSync, :QWORD,:QWORD,:QWORD
+PROTO64 external,ScBinFromHexBounded, :QWORD,:QWORD,:QWORD
+PROTO64 external,ScCopyNotifications, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,ScCopyProps, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,ScCountNotifications, :QWORD,:QWORD,:QWORD
+PROTO64 external,ScCountProps, :QWORD,:QWORD,:QWORD
+PROTO64 external,ScCreateConversationIndex, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,ScDupPropset, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,ScGenerateMuid, :QWORD
+PROTO64 external,ScInitMapiUtil, :QWORD
+PROTO64 external,ScLocalPathFromUNC, :QWORD,:QWORD,:QWORD
+PROTO64 external,ScRelocNotifications, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,ScRelocProps, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,ScUNCFromLocalPath, :QWORD,:QWORD,:QWORD
+PROTO64 external,SetAttribIMsgOnIStg, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,SwapPlong, :QWORD,:QWORD
+PROTO64 external,SwapPword, :QWORD,:QWORD
+PROTO64 external,SzFindCh, :QWORD,:QWORD
+PROTO64 external,SzFindLastCh, :QWORD,:QWORD
+PROTO64 external,SzFindSz, :QWORD,:QWORD
+PROTO64 external,UFromSz, :QWORD
+PROTO64 external,UNKOBJ_COFree, :QWORD,:QWORD
+PROTO64 external,UNKOBJ_Free, :QWORD,:QWORD
+PROTO64 external,UNKOBJ_FreeRows, :QWORD,:QWORD
+PROTO64 external,UNKOBJ_ScAllocate, :QWORD,:QWORD,:QWORD
+PROTO64 external,UNKOBJ_ScAllocateMore, :QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,UNKOBJ_ScCOAllocate, :QWORD,:QWORD,:QWORD
+PROTO64 external,UNKOBJ_ScCOReallocate, :QWORD,:QWORD,:QWORD
+PROTO64 external,UNKOBJ_ScSzFromIdsAlloc, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,UlAddRef, :QWORD
+PROTO64 external,UlFromSzHex, :QWORD
+PROTO64 external,UlPropSize, :QWORD
+PROTO64 external,UlRelease, :QWORD
+PROTO64 external,WrapCompressedRTFStream, :QWORD,:QWORD,:QWORD
+PROTO64 external,WrapProgress, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,WrapStoreEntryID, :QWORD,:QWORD,:QWORD,:QWORD,:QWORD,:QWORD
+PROTO64 external,__CPPValidateParameters, :QWORD,:QWORD
+PROTO64 external,__ValidateParameters, :QWORD,:QWORD
+
+ELSE
+echo -----------------------------------------
+echo WARNING Duplicate include file mapi32.inc
+echo -----------------------------------------
+ENDIF
+
