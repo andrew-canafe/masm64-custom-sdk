@@ -1,4 +1,4 @@
-# MASM64-Custom-SDK
+# MASM64 Custom SDK
 Custom MASM64 SDK (created in 2015) that I put together for my personal assembly language projects. Includes the MASM64 assembler.
 
 ## How to use:
